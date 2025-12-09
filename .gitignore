@@ -1,3 +1,9 @@
 __pycache__/
 venv/
+datasets/  
+nano_trainer.py  
+runs/  
+tennis.yaml
+train.py
 yolov8n.pt
+yolov8x.pt
