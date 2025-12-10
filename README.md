@@ -168,11 +168,18 @@ The custom model achieved:
 
 This project includes a helper script (make_tennis_dataset.py) that:
     
-    - Extracts frames from a video
-    - Auto-labels tennis balls using YOLOv8x
-    - Produces a training-ready YOLO dataset
+- Extracts frames from a video
+- Auto-labels tennis balls using YOLOv8x
+- Produces a training-ready YOLO dataset
 
 #### Creates tennis.yaml for training
+
+### Shortcomings
+
+- Not accurate predictions for trajectory (expected)
+- Predicted trajectory is mostly linear and not parabolic in the case of bouncing objects (real-world cases): Requires more training
+- Cannot exactly say where the ball will land, or when.
+- Output window is kind of unscaled (as appearing in testing), thus leading to out-of-scope windows/partial viewing of output.
 
 ## Future Improvements
     
