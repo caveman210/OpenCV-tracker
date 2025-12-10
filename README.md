@@ -119,7 +119,7 @@ Optional for TUI:
 
 (Linux/macOS usually include it by default)
 
-▶️ Usage
+## Usage
 1. Run the application
     python3 src/main.py
 
