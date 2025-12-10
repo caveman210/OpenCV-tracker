@@ -164,15 +164,8 @@ The custom model achieved:
 - mAP50: 0.995
 - mAP50–95: 0.921
 
-## Dataset Generation (Optional)
-
-This project includes a helper script (make_tennis_dataset.py) that:
-    
-- Extracts frames from a video
-- Auto-labels tennis balls using YOLOv8x
-- Produces a training-ready YOLO dataset
-
-#### Creates tennis.yaml for training
+It was trained upon frames captured from input video and thus is catered specifically to the output of that video, thus leading to lesser prediction in other cases. 
+The custom model was trained upon a dataset created from feeding the video to YOLOv8x, which created the required dataset, and by feeding the very same dataset to YOLOv8n.
 
 ### Shortcomings
 
